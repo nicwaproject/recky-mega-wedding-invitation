@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <meta property="og:title" content="Wedding Invitation">
+    <meta property="og:description" content="Recky & Mega's Wedding Invitation">
+    <meta property="og:image" content="gallery5.jpeg"> <!-- Specify the URL of your preview image -->
+    <meta property="og:image:width" content="50"> <!-- Width of the image in pixels -->
+    <meta property="og:image:height" content="50"> <!-- Height of the image in pixels -->
+    <link rel="icon" href="logo2.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=La+Belle+Aurore&family=Marck+Script&family=Noto+Naskh+Arabic:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Updock&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=La+Belle+Aurore&family=Marck+Script&family=Noto+Naskh+Arabic:wght@400..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Updock&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="invitationCover" class="invitation-cover">
+        <div class="cover-content">
+            <p>THE WEDDING OF</p>
+            <p class="couple" id="coupleNames"></p>
+            <p>Dear</p>
+            <p class="guest"><span id="guestName"></span></p>
+            <button id="openButton"><i class="fas fa-book-open"></i> BUKA UNDANGAN</button>
+        </div>
+    </div>
+
+    <div id="invitationContent" class="invitation-content">
+        <nav>
+            <ul>
+                <li><a href="#section1"><i class="fas fa-home"></i></a></li>
+                <li><a href="#section4"><i class="fas fa-user"></i></a></li>
+                <li><a href="#section5"><i class="fas fa-calendar"></i></a></li>
+                <li><a href="#section7"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="#section8"><i class="fas fa-gift"></i></a></li>
+            </ul>
+        </nav>
+
+
+        <div class="section fade-in" id="section1">
+            <div class="section1-content">
+                <img src="couple.png" alt="couple image">
+                <div class="flower-decoration fade-slide">
+                    <img src="couple-flower.png" alt="flower decoration">
+                </div>
+                <!-- Lottie Birds Animation -->
+                <div id="birds-animation" class="lottie-container"></div>
+                <p>THE WEDDING OF</p>
+                <h1>Recky & Mega</h1>
+                <p>26.04.2025</p>
+                <button id="goToSection3">Save the Date</button>
+            </div>
+        </div>
+
+
+        <div class="section" id="section2">
+            <div class="section2-content">
+                <!-- Vintage Frame -->
+                <div class="frame-container fade-slide">
+                    <img src="vintage.png" alt="Vintage Frame">
+                    <div class="text">R M</div>
+                </div>
+        
+                <!-- Quran Verse -->
+                <div class="quran-verse">
+                    <p class="translation fade-slide">Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</p>
+                    <p class="surah fade-slide">Surah Ar-Rum, 30:21</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section4">
+            <div class="section4-content">
+                <h3 class="fade-slide section4-judul">Kedua Mempelai</h3>
+                <div class="profile-container">
+                    <div class="profile">
+                        <img src="husband.png" alt="Husband Profile" class="fade-slide">
+                        <div class="profile-flower fade-slide">
+                            <img src="profile-flower.png" alt="Flower Decoration">
+                        </div>
+                        <div class="profile-info fade-slide">
+                            <h3>Recky Fesany Sunarya Putra, S.M</h3>
+                            <p>Putra ketiga dari Bapak Sunarya dan Ibu Meliasari J.S</p>
+                            <a href="https://www.instagram.com/reckyfesanysp?igsh=MXNteTM1Y3c3OWwzeg==" target="_blank" class="instagram-button"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="wife.png" alt="Wife Profile" class="fade-slide">
+                        <div class="profile-flower fade-slide">
+                            <img src="profile-flower.png" alt="Flower Decoration">
+                        </div>
+                        <div class="profile-info fade-slide">
+                            <h3>Megawati, S.M</h3>
+                            <p>Putri keempat dari Bapak Sanudin dan Ibu Rosiah (Almh)</p>
+                            <a href="https://www.instagram.com/_itsmgwt?igsh=MWVsbW5jMWZpbXp0NQ==" target="_blank" class="instagram-button"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <div class="section3-content">
+                <p class="fade-slide">MENUJU HARI BAHAGIA</p>
+                <div id="countdown">
+                    <div class="unit fade-slide">
+                        <span class="number" id="days"></span>
+                        <span class="label">Hari</span>
+                    </div>
+                    <div class="unit fade-slide">
+                        <span class="number" id="hours"></span>
+                        <span class="label">Jam</span>
+                    </div>
+                    <div class="unit fade-slide">
+                        <span class="number" id="minutes"></span>
+                        <span class="label">Menit</span>
+                    </div>
+                    <div class="unit fade-slide">
+                        <span class="number" id="seconds"></span>
+                        <span class="label">Detik</span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="section" id="section5">
+            <div class="wedding-detail">
+                <img src="merak.png" alt="merak" class="fade-slide merak">
+                <h2 class="fade-slide">With Love</h2>
+                <p class="fade-slide">Dengan segala kerendahan hati dan dengan ucapan syukur atas karunia Tuhan, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan kami yang akan dilaksanakan pada:</p>
+                <div class="akad-nikah fade-slide">
+                    <div class="event-layer">
+                        <img src="event_decoration.png" alt="event decoration" class="event-decor">
+                        <h3>Akad Nikah</h3>
+                        <img src="line.png" alt="line" class="event-line">
+                        <p><i class="fas fa-calendar-alt"></i> Sabtu, 26 April 2025</p>
+                        <p><i class="fas fa-clock"></i> 09:00 s.d 11:00 WIB</p>
+                        <img src="line_map.png" alt="line_map" class="event-line">
+                        <p><i class="fas fa-map-marker-alt"></i> Kediaman Mempelai Wanita</p>
+                        <p><i class="fas fa-map-pin"></i> Kp. Baru Ragajaya RT. 03/09, Ragajaya, Kec. Bojonggede, Kab. Bogor</p>
+                        <a href="https://maps.app.goo.gl/kXnqG87KmYDVqKqu7" target="_blank" class="location-button">
+                            <i class="fas fa-map-marker-alt"></i> Lokasi Acara
+                        </a>
+                    </div>
+                </div>                
+                <div class="resepsi fade-slide">
+                    <div class="event-layer">
+                        <img src="event_decoration.png" alt="event decoration" class="event-decor">
+                        <h3>Resepsi</h3>
+                        <img src="line.png" alt="line" class="event-line">
+                        <p><i class="fas fa-calendar-alt"></i> Sabtu, 26 April 2025</p>
+                        <p><i class="fas fa-clock"></i> 12:00 WIB s.d Selesai</p>
+                        <img src="line_map.png" alt="line_map" class="event-line">
+                        <p><i class="fas fa-map-marker-alt"></i> Kediaman Mempelai Wanita</p>
+                        <p><i class="fas fa-map-pin"></i> Kp. Baru Ragajaya RT. 03/09, Ragajaya, Kec. Bojonggede, Kab. Bogor</p>
+                        <a href="https://maps.app.goo.gl/kXnqG87KmYDVqKqu7" target="_blank" class="location-button">
+                            <i class="fas fa-map-marker-alt"></i> Lokasi Acara
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" id="section6">
+            <h2 class="gallery-title fade-slide">Photo Gallery</h2>
+            <div class="gallery fade-slide">
+                <img src="gallery1.jpeg" alt="Gallery Photo 1" class="fade-slide">
+                <img src="gallery2.jpeg" alt="Gallery Photo 2" class="fade-slide">
+                <img src="gallery3.jpeg" alt="Gallery Photo 3" class="fade-slide">
+                <img src="resepsi.jpeg" alt="Gallery Photo 4" class="fade-slide">
+                <img src="gallery5.jpeg" alt="Gallery Photo 5" class="fade-slide">
+                <img src="gallery6.jpeg" alt="Gallery Photo 6" class="fade-slide">
+                <img src="gallery7.jpeg" alt="Gallery Photo 7" class="fade-slide">
+                <img src="gallery8.jpeg" alt="Gallery Photo 8" class="fade-slide">
+                <img src="gallery9.jpeg" alt="Gallery Photo 9" class="fade-slide">
+                <img src="gallery10.jpeg" alt="Gallery Photo 10" class="fade-slide">
+                <img src="gallery11.jpeg" alt="Gallery Photo 11" class="fade-slide">
+                <img src="akad.jpeg" alt="Gallery Photo 12" class="fade-slide">
+            </div>
+        </div>
+
+        <!-- Modal for Fullscreen -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+
+        <div class="section" id="section8">
+            <div class="gift-details">
+                    <h2 class="fade-slide">Wedding Gift</h2>
+                    <p class="fade-slide">Jika ingin memberikan hadiah pernikahan, Anda dapat melakukannya melalui nomor rekening berikut:</p>
+                <div class="bank-container">
+                    <div class="bank-item">
+                        <img src="bca.png" alt="Logo Bank" class="bank-logo1 fade-slide">
+                        <img src="chip.png" alt="chip" class="fade-slide chip">
+                        <p class="fade-slide account-name">Recky Fesany S.P</p>
+                        <p class="bank-number fade-slide">7005044464</p>
+                        <button id="copyButton" class="copyButton fade-slide"><i class="fas fa-copy"></i> Copy</button>
+                    </div>
+                    <div class="bank-item">
+                        <img src="mandiri.png" alt="Logo Bank" class="bank-logo2 fade-slide">
+                        <img src="chip.png" alt="chip" class="fade-slide chip">
+                        <p class="account-name fade-slide">Megawati</p>
+                        <p class="bank-number fade-slide">1570007042642</p>
+                        <button id="copyButton" class="copyButton fade-slide"><i class="fas fa-copy"></i> Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="section" id="section7">
+                <div class="section7-content">
+                    <h2 class="fade-slide">Wishes</h2>
+                    <p class="fade-slide">Berikan ucapan harapan dan do'a kepada kedua mempelai</p>
+                    <form id="messageForm" action="https://recky-dan-mega.glitch.me/messages" method="POST" class="fade-slide">
+                        <input type="text" id="formGuestName" name="name" placeholder="Your Name" required>
+                        <textarea id="guestMessage" name="message" rows="4" placeholder="Your Message" required></textarea>
+                        <button type="submit">KIRIM</button>
+                    </form>
+                    <div id="messageList" class="fade-slide"></div>
+                </div>
+            </div>
+
+        <div class="thank-you">
+            <div class="thank-you-content">
+                <!-- Vintage Frame -->
+                <div class="frame-container fade-slide">
+                    <img src="vintage.png" alt="Vintage Frame">
+                    <div class="text">R M</div>
+                </div>
+                <img src="couple2.png" alt="we are happy" class="fade-slide thank-you-image">
+                <div class="flower-decoration fade-slide">
+                    <img src="couple-flower.png" alt="flower decoration">
+                </div>
+                <p class="fade-slide">Merupakan suatu kehormatan & kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i hadir untuk memberikan doa restunya untuk keberkahan pernikahan kami.</p>
+                <h2 class="fade-slide couple-name">Recky & Mega</h2>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="logo fade-slide">
+                    <img src="nc logo.png" alt="Logo" />
+                </div>
+                <div class="social-media-ncp fade-slide">
+                    <a href="https://www.facebook.com/profile.php?id=61560664461271&mibextid=LQQJ4d" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nicwaproject?igsh=enk4YWxoa24zNzY5&utm_source=qr" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/+6285974176110" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://nicwaproject.github.io/NicwaProject-Store/" target="_blank" class="social-icon"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </footer>
+        
+    <div id="audioControl">
+        <img id="playPauseButton" src="play-button.png" alt="Play" class="play-btn">
+    </div>
+</div>
+
+<audio id="backgroundMusic" src="Ari Lasso - Cinta Terakhir.mp3"></audio> <!-- Change this to the path of your music file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
